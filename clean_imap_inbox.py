@@ -8,9 +8,12 @@ import os
 
 imap_server = 'imap-mail.outlook.com'
 port = 993
+
+# TODO: add mutiple user/email account. Dict as env var?
 user = os.environ['OUTLOOK_USER']
 pwd = os.environ['OUTLOOK_PASS']
 folder = 'Inbox'
+# TODO: search criteria for each email account. From file? json?
 search_criteria = ['(FROM "Netflix")', '(FROM "eBay")', '(FROM "Popular")',
                    '(FROM "Skype")', '(FROM "Twitter")',
                    '(SUBJECT "Microsoft")'
